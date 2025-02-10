@@ -1,4 +1,4 @@
-emailjs.init('OVU_YIV8_eY0HFr0D');  // Reemplaza por tu Public Key
+emailjs.init('y85aewyFuI_7nyFrl');  // Reemplaza por tu Public Key
 
 function validarFormulario() {
     const nombre = document.getElementById('nombre').value.trim();
@@ -36,8 +36,8 @@ function validarEmail(email) {
 const form = document.getElementById('sugerenciaform');
 const respuesta = document.getElementById('respuesta');
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
     if (!validarFormulario()) {
         return;
     }
@@ -51,12 +51,12 @@ form.addEventListener('submit', function(event) {
     };
 
     emailjs.send('service_mtd684m', 'template_zzzhjk5', emailParams)
-        .then(function(response) {
+        .then(function (response) {
             console.log('Correo enviado exitosamente:', response);
             respuesta.style.display = 'block';
             respuesta.innerHTML = '¡Gracias por tu sugerencia!';
-            form.reset(); 
-        }, function(error) {
+            form.reset();
+        }, function (error) {
             console.log('Error al enviar el correo:', error);
             respuesta.style.display = 'block';
             respuesta.innerHTML = 'Lo sentimos, hubo un error al enviar tu sugerencia. Por favor, inténtalo nuevamente.';
