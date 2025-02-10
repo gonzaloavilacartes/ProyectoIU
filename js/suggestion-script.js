@@ -1,4 +1,4 @@
-emailjs.init('6sujvdv');  // Reemplaza por tu Public Key
+emailjs.init('y85aewyFuI_7nyFrl');  // Reemplaza por tu Public Key
 
 function validarFormulario() {
     const nombre = document.getElementById('nombre').value.trim();
