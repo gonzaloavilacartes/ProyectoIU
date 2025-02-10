@@ -50,7 +50,7 @@ form.addEventListener('submit', function (event) {
         message: formData.get('sugerencia'),
     };
 
-    emailjs.send('6sujvdv', 'template_iw0vcnk', emailParams)
+    emailjs.send('service_a35x9eb', 'template_iw0vcnk', emailParams)
         .then(function (response) {
             console.log('Correo enviado exitosamente:', response);
             respuesta.style.display = 'block';
